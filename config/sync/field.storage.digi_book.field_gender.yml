@@ -1,0 +1,20 @@
+uuid: 53d3be4b-f2bb-49a3-a915-3f42cd1e05b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+    - taxonomy
+id: digi_book.field_gender
+field_name: field_gender
+entity_type: digi_book
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

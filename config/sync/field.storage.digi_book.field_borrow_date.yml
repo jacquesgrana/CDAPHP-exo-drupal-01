@@ -1,0 +1,20 @@
+uuid: d4c4bc7c-f9f2-4144-8e52-bbbce93edf10
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - digi_book
+id: digi_book.field_borrow_date
+field_name: field_borrow_date
+entity_type: digi_book
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

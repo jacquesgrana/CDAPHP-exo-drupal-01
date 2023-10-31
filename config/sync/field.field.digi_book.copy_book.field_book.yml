@@ -1,0 +1,29 @@
+uuid: 1d5b643e-f05b-45be-a4ba-dbfa7f381244
+langcode: en
+status: true
+dependencies:
+  config:
+    - digi_book.digi_book_type.book
+    - digi_book.digi_book_type.copy_book
+    - field.storage.digi_book.field_book
+id: digi_book.copy_book.field_book
+field_name: field_book
+entity_type: digi_book
+bundle: copy_book
+label: Livre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digi_book'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

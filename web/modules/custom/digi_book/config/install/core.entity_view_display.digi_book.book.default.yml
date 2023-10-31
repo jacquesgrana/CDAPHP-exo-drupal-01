@@ -1,0 +1,101 @@
+uuid: 4a973d05-6d29-4fc2-9098-227dca3750c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - digi_book.digi_book_type.book
+    - field.field.digi_book.book.field_book_author
+    - field.field.digi_book.book.field_copies_book
+    - field.field.digi_book.book.field_description
+    - field.field.digi_book.book.field_gender
+  module:
+    - text
+    - user
+id: digi_book.book.default
+targetEntityType: digi_book
+bundle: book
+mode: default
+content:
+  created:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_book_author:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_copies_book:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_gender:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  status:
+    type: boolean
+    label: above
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  uid:
+    type: author
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden: {  }

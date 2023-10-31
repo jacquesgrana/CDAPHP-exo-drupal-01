@@ -1,0 +1,19 @@
+uuid: d9a76d67-c8a8-4076-b12d-8700c3ab2633
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+id: digi_book.field_copies_book
+field_name: field_copies_book
+entity_type: digi_book
+type: entity_reference
+settings:
+  target_type: digi_book
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

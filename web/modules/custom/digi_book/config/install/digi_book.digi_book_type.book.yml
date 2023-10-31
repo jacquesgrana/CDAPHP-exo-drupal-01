@@ -1,0 +1,6 @@
+uuid: 3d1fc9d0-13d8-4de8-82d7-139925d3e0b9
+langcode: en
+status: true
+dependencies: {  }
+id: book
+label: Book

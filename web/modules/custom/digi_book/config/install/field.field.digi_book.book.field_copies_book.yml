@@ -1,0 +1,29 @@
+uuid: 4e3340b2-40f9-468a-95bf-06b7e6f2d188
+langcode: en
+status: true
+dependencies:
+  config:
+    - digi_book.digi_book_type.book
+    - digi_book.digi_book_type.copy_book
+    - field.storage.digi_book.field_copies_book
+id: digi_book.book.field_copies_book
+field_name: field_copies_book
+entity_type: digi_book
+bundle: book
+label: Exemplaires
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:digi_book'
+  handler_settings:
+    target_bundles:
+      copy_book: copy_book
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

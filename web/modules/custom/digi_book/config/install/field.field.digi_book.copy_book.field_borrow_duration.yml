@@ -1,0 +1,25 @@
+uuid: 4fe98157-cec3-429e-bb12-04507d00b384
+langcode: en
+status: true
+dependencies:
+  config:
+    - digi_book.digi_book_type.copy_book
+    - field.storage.digi_book.field_borrow_duration
+id: digi_book.copy_book.field_borrow_duration
+field_name: field_borrow_duration
+entity_type: digi_book
+bundle: copy_book
+label: Durée
+description: "Durée d'emprunt en jours"
+required: false
+translatable: false
+default_value:
+  -
+    value: 30
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

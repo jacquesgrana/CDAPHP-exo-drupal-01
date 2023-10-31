@@ -1,0 +1,20 @@
+uuid: 5f2405cf-7486-45be-8a20-e21b83a10891
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+    - user
+id: digi_book.field_borrower
+field_name: field_borrower
+entity_type: digi_book
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

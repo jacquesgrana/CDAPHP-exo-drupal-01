@@ -1,0 +1,97 @@
+uuid: df1edfa8-22d7-4d77-96a2-384d22fa025d
+langcode: en
+status: true
+dependencies:
+  config:
+    - digi_book.digi_book_type.book
+    - field.field.digi_book.book.field_book_author
+    - field.field.digi_book.book.field_copies_book
+    - field.field.digi_book.book.field_description
+    - field.field.digi_book.book.field_gender
+  module:
+    - text
+id: digi_book.book.default
+targetEntityType: digi_book
+bundle: book
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_book_author:
+    type: entity_reference_autocomplete
+    weight: 23
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_copies_book:
+    type: entity_reference_autocomplete
+    weight: 24
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea_with_summary
+    weight: 21
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_gender:
+    type: entity_reference_autocomplete
+    weight: 22
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
