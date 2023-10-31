@@ -1,0 +1,12 @@
+administer digi_book types:
+  title: 'Administer digi book types'
+  description: 'Maintain the types of digi book entity.'
+  restrict access: true
+view digi_book:
+  title: 'View digi book'
+edit digi_book:
+  title: 'Edit digi book'
+delete digi_book:
+  title: 'Delete digi book'
+create digi_book:
+  title: 'Create digi book'

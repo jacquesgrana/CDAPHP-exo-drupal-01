@@ -1,0 +1,20 @@
+uuid: 62667485-8440-4389-95a5-e28c70df3b72
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: iUd6C7OIgJUgp1D2uO67FFpjzGj7oU_M-K4sIdU81GM
+id: theme_exo_page_title
+theme: theme_exo
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

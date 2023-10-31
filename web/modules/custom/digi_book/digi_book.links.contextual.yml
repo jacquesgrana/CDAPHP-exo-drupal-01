@@ -1,0 +1,10 @@
+entity.digi_book.edit_form:
+  route_name: entity.digi_book.edit_form
+  group: digi_book
+  title: 'Edit'
+
+entity.digi_book.delete_form:
+  route_name: entity.digi_book.delete_form
+  group: digi_book
+  title: 'Delete'
+  weight: 10

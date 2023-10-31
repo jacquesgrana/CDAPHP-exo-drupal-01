@@ -1,0 +1,22 @@
+uuid: a8566260-54ae-45a5-9e05-5fee9c3ca8a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: nxGuCVFlZOGSTUCxK1vEWzkt6r3OtIoVP283CzqhLUw
+id: theme_exo_content
+theme: theme_exo
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

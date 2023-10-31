@@ -1,0 +1,22 @@
+uuid: b21e73aa-32ff-4b73-bd2a-1cdc3dcfc8a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: PgbleFR55x0jjgW9oUdseF_HWBE62ngexrGyXXXq_pg
+id: theme_exo_breadcrumbs
+theme: theme_exo
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

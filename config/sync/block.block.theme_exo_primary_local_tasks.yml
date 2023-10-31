@@ -1,0 +1,22 @@
+uuid: 2b0c4f32-e3e4-432d-a3e7-173256a46f5f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: tMNbh1lgF4I0YR7eRiB9db6IMJ0ZN7ZWzJjZsll3VNE
+id: theme_exo_primary_local_tasks
+theme: theme_exo
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

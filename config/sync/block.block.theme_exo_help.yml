@@ -1,0 +1,22 @@
+uuid: b5b7b1a4-3241-47d2-92dc-470ffca29d76
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: 60jtyzvAvzStxyco3K6n-us_msjdITpL28M3FVGT2CI
+id: theme_exo_help
+theme: theme_exo
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

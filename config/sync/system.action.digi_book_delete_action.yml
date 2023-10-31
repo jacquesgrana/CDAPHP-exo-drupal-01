@@ -1,0 +1,13 @@
+uuid: f48bceed-71d8-4524-8bb4-08b64734f8b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+_core:
+  default_config_hash: sxwFLgN5PHnOrhbPoeeLakrHZhH3cs_wIrqLeNYxtTo
+id: digi_book_delete_action
+label: 'Delete digi books'
+type: digi_book
+plugin: 'entity:delete_action:digi_book'
+configuration: {  }

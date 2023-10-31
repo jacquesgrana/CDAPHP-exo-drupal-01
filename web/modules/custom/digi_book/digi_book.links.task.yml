@@ -1,0 +1,26 @@
+entity.digi_book.view:
+  title: 'View'
+  route_name: entity.digi_book.canonical
+  base_route: entity.digi_book.canonical
+entity.digi_book.edit_form:
+  title: 'Edit'
+  route_name: entity.digi_book.edit_form
+  base_route: entity.digi_book.canonical
+entity.digi_book.delete_form:
+  title: 'Delete'
+  route_name: entity.digi_book.delete_form
+  base_route: entity.digi_book.canonical
+  weight: 10
+entity.digi_book.collection:
+  title: 'Digi books'
+  route_name: entity.digi_book.collection
+  base_route: system.admin_content
+  weight: 10
+entity.digi_book_type.edit_form:
+  title: 'Edit'
+  route_name: entity.digi_book_type.edit_form
+  base_route: entity.digi_book_type.edit_form
+entity.digi_book_type.collection:
+  title: 'List'
+  route_name: entity.digi_book_type.collection
+  base_route: entity.digi_book_type.collection

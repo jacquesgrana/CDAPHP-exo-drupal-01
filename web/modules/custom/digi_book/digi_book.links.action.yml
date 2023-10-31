@@ -1,0 +1,11 @@
+digi_book.type_add:
+  title: 'Add digi book type'
+  route_name: entity.digi_book_type.add_form
+  appears_on:
+    - entity.digi_book_type.collection
+
+digi_book.add_page:
+  title: 'Add digi book'
+  route_name: entity.digi_book.add_page
+  appears_on:
+    - entity.digi_book.collection

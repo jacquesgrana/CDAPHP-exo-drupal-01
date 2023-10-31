@@ -1,0 +1,23 @@
+uuid: 5a86dfde-2d36-4df9-a420-1bd511c510c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: TKGvQUAMKz46SrZbliWaIsayrmVkMydtMz9punqoKsI
+id: theme_exo_search_form_wide
+theme: theme_exo
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

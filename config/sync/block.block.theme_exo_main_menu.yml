@@ -1,0 +1,27 @@
+uuid: e9b2027b-3b79-4f74-bb03-aa13e7d3c5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: OA4GFjQibITXYAANvu0iiv3zGaTZ-7VhfGqQEyUzZ5s
+id: theme_exo_main_menu
+theme: theme_exo
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

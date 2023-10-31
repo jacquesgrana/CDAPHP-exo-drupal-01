@@ -1,0 +1,22 @@
+uuid: 650758ca-4dfd-48d0-a682-d8d3fb4172dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: ThI6sSaBcHQH-7ElMOaqj8lCGCPpZxGWJzz6nMpr0eg
+id: theme_exo_powered
+theme: theme_exo
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

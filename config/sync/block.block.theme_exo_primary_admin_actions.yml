@@ -1,0 +1,20 @@
+uuid: db7886ae-eecd-44bb-88cd-3518772031e7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: 1RoNNZMo4oU-cUNxUPkdWNieobCKkfvFd60DueGMhjc
+id: theme_exo_primary_admin_actions
+theme: theme_exo
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,83 @@
+<?php declare(strict_types = 1);
+
+/**
+ * @file
+ * Provides a digi book entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function digi_book_theme(): array {
+  return [
+    'digi_book' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for digi book templates.
+ *
+ * Default template: digi-book.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the digi book information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_digi_book(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function digi_book_user_cancel($edit, UserInterface $account, $method): void {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish digi books.
+      $storage = \Drupal::entityTypeManager()->getStorage('digi_book');
+      $digi_book_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($digi_book_ids) as $digi_book) {
+        $digi_book->set('status', FALSE)->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize digi books.
+      $storage = \Drupal::entityTypeManager()->getStorage('digi_book');
+      $digi_book_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($digi_book_ids) as $digi_book) {
+        $digi_book->setOwnerId(0)->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function digi_book_user_predelete(UserInterface $account): void {
+  // Delete digi books that belong to this account.
+  $storage = \Drupal::entityTypeManager()->getStorage('digi_book');
+  $digi_book_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->accessCheck(FALSE)
+    ->execute();
+  $storage->delete(
+    $storage->loadMultiple($digi_book_ids)
+  );
+}

@@ -1,0 +1,22 @@
+uuid: 19bd852f-4bb7-47f7-9e4e-681a47a58bae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: 5h1qsuG7w1DEg0fSN4shwrsGYrMbQMXFp6FweFoT0BU
+id: theme_exo_messages
+theme: theme_exo
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

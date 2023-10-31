@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+id: digi_book_save_action
+label: 'Save digi books'
+type: digi_book
+plugin: entity:save_action:digi_book
+configuration: {  }

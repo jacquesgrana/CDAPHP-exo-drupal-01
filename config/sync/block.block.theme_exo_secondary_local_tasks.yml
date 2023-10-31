@@ -1,0 +1,22 @@
+uuid: 41bb392e-07a0-4840-a2c9-4e63a74cb955
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: 4_EpwyVGMSrE35LNC-r8f4f1fOQv172dqNEP3VfQdPI
+id: theme_exo_secondary_local_tasks
+theme: theme_exo
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

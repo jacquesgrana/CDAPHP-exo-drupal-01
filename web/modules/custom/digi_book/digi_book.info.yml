@@ -1,0 +1,5 @@
+name: 'Digi book'
+type: module
+description: 'Module to manage library books'
+package: 'Custom'
+core_version_requirement: ^10

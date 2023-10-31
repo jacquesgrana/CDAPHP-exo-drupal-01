@@ -1,0 +1,25 @@
+uuid: 624c112d-00aa-4bc3-994e-3848cf43cdc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_exo
+_core:
+  default_config_hash: ifCFWqdWnQIn_QINtf6319a68hFgintFggvpeRkNYuI
+id: theme_exo_site_branding
+theme: theme_exo
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

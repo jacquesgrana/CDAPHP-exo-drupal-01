@@ -1,0 +1,13 @@
+uuid: e8e5ea9a-e55c-40af-9ca2-ba7e3de0104c
+langcode: en
+status: true
+dependencies:
+  module:
+    - digi_book
+_core:
+  default_config_hash: htWF-Md37jzCfA-CCDkoh7H40fMSC-JR7SiNU9cKab0
+id: digi_book_save_action
+label: 'Save digi books'
+type: digi_book
+plugin: 'entity:save_action:digi_book'
+configuration: {  }
